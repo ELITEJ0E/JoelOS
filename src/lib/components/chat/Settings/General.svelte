@@ -14,7 +14,7 @@
 	export let getModels: Function;
 
 	// General
-	let themes = ['dark', 'light', 'oled-dark'];
+	let themes = ['dark', 'light', 'oled-dark', 'joelos'];
 	let selectedTheme = 'system';
 
 	let languages: Awaited<ReturnType<typeof getLanguages>> = [];
@@ -135,7 +135,14 @@
 	});
 
 	const applyTheme = (_theme: string) => {
-		let themeToApply = _theme === 'oled-dark' ? 'dark' : _theme === 'her' ? 'light' : _theme;
+		let themeToApply =
+			_theme === 'oled-dark'
+				? 'dark'
+				: _theme === 'joelos'
+					? 'joelos'
+					: _theme === 'her'
+						? 'light'
+						: _theme;
 
 		if (_theme === 'system') {
 			themeToApply = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -176,9 +183,11 @@
 						? '#171717'
 						: _theme === 'oled-dark'
 							? '#000000'
-							: _theme === 'her'
-								? '#983724'
-								: '#ffffff'
+							: _theme === 'joelos'
+								? '#0a0f0a'
+								: _theme === 'her'
+									? '#983724'
+									: '#ffffff'
 				);
 			}
 		}
@@ -193,6 +202,14 @@
 			document.documentElement.style.setProperty('--color-gray-900', '#000000');
 			document.documentElement.style.setProperty('--color-gray-950', '#000000');
 			document.documentElement.classList.add('dark');
+		}
+
+		if (_theme.includes('joelos')) {
+			document.documentElement.style.setProperty('--color-gray-800', '#111a11');
+			document.documentElement.style.setProperty('--color-gray-850', '#0d140d');
+			document.documentElement.style.setProperty('--color-gray-900', '#0a0f0a');
+			document.documentElement.style.setProperty('--color-gray-950', '#050805');
+			document.documentElement.classList.add('joelos');
 		}
 
 		console.log(_theme);
@@ -222,6 +239,7 @@
 						on:change={() => themeChangeHandler(selectedTheme)}
 					>
 						<option value="system">⚙️ {$i18n.t('System')}</option>
+						<option value="joelos">💚 {$i18n.t('JoelOS')}</option>
 						<option value="dark">🌑 {$i18n.t('Dark')}</option>
 						<option value="oled-dark">🌃 {$i18n.t('OLED Dark')}</option>
 						<option value="light">☀️ {$i18n.t('Light')}</option>

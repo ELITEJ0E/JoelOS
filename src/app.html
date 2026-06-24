@@ -28,7 +28,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
 		/>
-		<meta name="theme-color" content="#171717" />
+		<meta name="theme-color" content="#0a0a0a" />
 		<meta name="robots" content="noindex,nofollow" />
 
 		<script src="/static/loader.js" defer crossorigin="use-credentials"></script>
@@ -41,7 +41,6 @@
 		</script>
 
 		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
 			(() => {
 				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
 				const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -52,14 +51,18 @@
 
 				if (localStorage.theme === 'system') {
 					document.documentElement.classList.add(prefersDarkTheme ? 'dark' : 'light');
-					metaThemeColorTag.setAttribute('content', prefersDarkTheme ? '#171717' : '#ffffff');
+					metaThemeColorTag.setAttribute('content', prefersDarkTheme ? '#0a0a0a' : '#ffffff');
 				} else if (localStorage.theme === 'oled-dark') {
-					document.documentElement.style.setProperty('--color-gray-800', '#101010');
+					document.documentElement.style.setProperty('--color-gray-800', '#0a0a0a');
 					document.documentElement.style.setProperty('--color-gray-850', '#050505');
-					document.documentElement.style.setProperty('--color-gray-900', '#000000');
+					document.documentElement.style.setProperty('--color-gray-900', '#020202');
 					document.documentElement.style.setProperty('--color-gray-950', '#000000');
 					document.documentElement.classList.add('dark');
 					metaThemeColorTag.setAttribute('content', '#000000');
+				} else if (localStorage.theme === 'joelos') {
+					// JoelOS Hacker Theme
+					document.documentElement.classList.add('joelos');
+					metaThemeColorTag.setAttribute('content', '#0a0f0a');
 				} else if (localStorage.theme === 'light') {
 					document.documentElement.classList.add('light');
 					metaThemeColorTag.setAttribute('content', '#ffffff');
@@ -68,12 +71,13 @@
 					metaThemeColorTag.setAttribute('content', '#983724');
 				} else {
 					document.documentElement.classList.add('dark');
-					metaThemeColorTag.setAttribute('content', '#171717');
+					metaThemeColorTag.setAttribute('content', '#0a0a0a');
 				}
 
-				const preloadHref = document.documentElement.classList.contains('dark')
-					? '/static/splash-dark.png'
-					: '/static/splash.png';
+				const isJoelos = document.documentElement.classList.contains('joelos');
+				const isDarkMode = document.documentElement.classList.contains('dark') || isJoelos;
+
+				const preloadHref = isDarkMode ? '/static/splash-dark.png' : '/static/splash.png';
 				const preload = document.createElement('link');
 				preload.rel = 'preload';
 				preload.as = 'image';
@@ -86,7 +90,7 @@
 						if (e.matches) {
 							document.documentElement.classList.add('dark');
 							document.documentElement.classList.remove('light');
-							metaThemeColorTag.setAttribute('content', '#171717');
+							metaThemeColorTag.setAttribute('content', '#0a0a0a');
 						} else {
 							document.documentElement.classList.add('light');
 							document.documentElement.classList.remove('dark');
@@ -94,7 +98,6 @@
 						}
 					}
 				});
-				const isDarkMode = document.documentElement.classList.contains('dark');
 
 				const logo = document.createElement('img');
 				logo.id = 'logo';
@@ -102,7 +105,11 @@
 					'position: absolute; width: auto; height: 6rem; top: 44%; left: 50%; transform: translateX(-50%); display:block;';
 				logo.loading = 'eager';
 				logo.fetchPriority = 'high';
-				logo.src = isDarkMode ? '/static/splash-dark.png' : '/static/splash.png';
+				logo.src = isJoelos
+					? '/static/splash-dark.png'
+					: isDarkMode
+						? '/static/splash-dark.png'
+						: '/static/splash.png';
 
 				document.addEventListener('DOMContentLoaded', function () {
 					const splash = document.getElementById('splash-screen');
@@ -115,7 +122,7 @@
 			})();
 		</script>
 
-		<title>Open WebUI</title>
+		<title>JoelOS</title>
 
 		%sveltekit.head%
 	</head>
@@ -165,7 +172,7 @@
 							height: 0.75rem;
 
 							border-radius: 9999px;
-							background-color: #fafafa9a;
+							background-color: #1a2a1a;
 						"
 					></div>
 
@@ -176,16 +183,12 @@
 							width: 0%;
 							height: 0.75rem;
 							border-radius: 9999px;
-							background-color: #fff;
+							background-color: #00ff41;
+							box-shadow: 0 0 12px #00ff4199;
 						"
-						class="bg-white"
 					></div>
 				</div>
 			</div>
-
-			<!-- <span style="position: absolute; bottom: 32px; left: 50%; margin: -36px 0 0 -36px">
-				Footer content
-			</span> -->
 		</div>
 	</body>
 
@@ -200,7 +203,11 @@
 		}
 
 		html.dark #splash-screen {
-			background: #000;
+			background: #0a0a0a;
+		}
+
+		html.joelos #splash-screen {
+			background: #0a0f0a;
 		}
 
 		html.her #splash-screen {
@@ -236,12 +243,28 @@
 			display: block;
 		}
 
+		html.joelos #progress-background {
+			display: block;
+		}
+
+		html.joelos #progress-bar {
+			display: block;
+		}
+
 		@media (max-width: 24rem) {
 			html.her #progress-background {
 				display: none;
 			}
 
 			html.her #progress-bar {
+				display: none;
+			}
+
+			html.joelos #progress-background {
+				display: none;
+			}
+
+			html.joelos #progress-bar {
 				display: none;
 			}
 		}
