@@ -846,61 +846,61 @@ body {
 
 /* Kill white backgrounds everywhere */
 html.joelos .bg-white,
-html.joelos [class*="bg-white"] {
+html.joelos [class*='bg-white'] {
 	background-color: #0d140d !important;
 }
 
 html.joelos .dark\:bg-gray-900,
-html.joelos [class*="dark:bg-gray-900"] {
+html.joelos [class*='dark:bg-gray-900'] {
 	background-color: #0d140d !important;
 }
 
 html.joelos .dark\:bg-gray-800,
-html.joelos [class*="dark:bg-gray-800"] {
+html.joelos [class*='dark:bg-gray-800'] {
 	background-color: #111a11 !important;
 }
 
 html.joelos .dark\:bg-gray-850,
-html.joelos [class*="dark:bg-gray-850"] {
+html.joelos [class*='dark:bg-gray-850'] {
 	background-color: #0a0f0a !important;
 }
 
 html.joelos .dark\:bg-gray-950,
-html.joelos [class*="dark:bg-gray-950"] {
+html.joelos [class*='dark:bg-gray-950'] {
 	background-color: #050805 !important;
 }
 
 html.joelos .dark\:bg-black,
-html.joelos [class*="dark:bg-black"] {
+html.joelos [class*='dark:bg-black'] {
 	background-color: #0a0f0a !important;
 }
 
 html.joelos .bg-gray-50,
-html.joelos [class*="bg-gray-50"] {
+html.joelos [class*='bg-gray-50'] {
 	background-color: #0d140d !important;
 }
 
 html.joelos .bg-gray-100,
-html.joelos [class*="bg-gray-100"] {
+html.joelos [class*='bg-gray-100'] {
 	background-color: #0d140d !important;
 }
 
 html.joelos .bg-gray-200,
-html.joelos [class*="bg-gray-200"] {
+html.joelos [class*='bg-gray-200'] {
 	background-color: #111a11 !important;
 }
 
 /* ── FIX: Dialog/modal backdrop — NOT lime green ── */
-html.joelos [class*="backdrop"],
-html.joelos [class*="overlay"],
+html.joelos [class*='backdrop'],
+html.joelos [class*='overlay'],
 html.joelos .modal-backdrop,
-html.joelos [class*="modal"] [class*="fixed"][class*="inset-0"]:not([class*="z-"]):first-child,
-html.joelos [class*="bg-black"][class*="opacity"],
-html.joelos [class*="bg-black"][class*="bg-opacity"],
-html.joelos [class*="bg-gray-900"][class*="opacity"],
-html.joelos [class*="bg-gray-900"][class*="bg-opacity"],
-html.joelos [class*="bg-gray-950"][class*="opacity"],
-html.joelos [class*="bg-gray-950"][class*="bg-opacity"] {
+html.joelos [class*='modal'] [class*='fixed'][class*='inset-0']:not([class*='z-']):first-child,
+html.joelos [class*='bg-black'][class*='opacity'],
+html.joelos [class*='bg-black'][class*='bg-opacity'],
+html.joelos [class*='bg-gray-900'][class*='opacity'],
+html.joelos [class*='bg-gray-900'][class*='bg-opacity'],
+html.joelos [class*='bg-gray-950'][class*='opacity'],
+html.joelos [class*='bg-gray-950'][class*='bg-opacity'] {
 	background-color: rgba(0, 0, 0, 0.8) !important;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
@@ -910,7 +910,7 @@ html.joelos .bg-black\/50,
 html.joelos .bg-black\/60,
 html.joelos .bg-black\/70,
 html.joelos .bg-black\/80,
-html.joelos [class*="bg-black/"] {
+html.joelos [class*='bg-black/'] {
 	background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
@@ -918,16 +918,16 @@ html.joelos .bg-gray-900\/50,
 html.joelos .bg-gray-900\/60,
 html.joelos .bg-gray-900\/70,
 html.joelos .bg-gray-900\/80,
-html.joelos [class*="bg-gray-900/"] {
+html.joelos [class*='bg-gray-900/'] {
 	background-color: rgba(5, 8, 5, 0.8) !important;
 }
 
 /* ── FIX: Chat text visibility ── */
 html.joelos .message-content,
-html.joelos [class*="message"] [class*="content"],
-html.joelos [class*="message"] p,
-html.joelos [class*="message"] span,
-html.joelos [class*="message"] div,
+html.joelos [class*='message'] [class*='content'],
+html.joelos [class*='message'] p,
+html.joelos [class*='message'] span,
+html.joelos [class*='message'] div,
 html.joelos .prose,
 html.joelos .prose *,
 html.joelos .markdown-prose,
@@ -937,175 +937,163 @@ html.joelos .markdown-prose * {
 
 /* Ensure code within messages stays green */
 html.joelos .message-content code,
-html.joelos [class*="message"] code {
+html.joelos [class*='message'] code {
 	color: #00ff41 !important;
 }
 
 /* Chat message links */
-html.joelos [class*="message"] a {
+html.joelos [class*='message'] a {
 	color: #00ff41 !important;
 }
 
 /* Chat message headings */
-html.joelos [class*="message"] h1,
-html.joelos [class*="message"] h2,
-html.joelos [class*="message"] h3,
-html.joelos [class*="message"] h4 {
+html.joelos [class*='message'] h1,
+html.joelos [class*='message'] h2,
+html.joelos [class*='message'] h3,
+html.joelos [class*='message'] h4 {
 	color: #00ff41 !important;
 }
 
 /* Chat message blockquotes */
-html.joelos [class*="message"] blockquote {
+html.joelos [class*='message'] blockquote {
 	color: #b8f0b8 !important;
 	border-left-color: #00ff41 !important;
 }
 
 /* User message text */
-html.joelos [class*="message"][class*="user"] *,
+html.joelos [class*='message'][class*='user'] *,
 html.joelos .message-user * {
 	color: #d4ffd4 !important;
 }
 
 /* Assistant message text */
-html.joelos [class*="message"][class*="assistant"] *,
+html.joelos [class*='message'][class*='assistant'] *,
 html.joelos .message-assistant * {
 	color: #d4ffd4 !important;
 }
 
 /* ── Text colors ── */
 html.joelos .dark\:text-white,
-html.joelos [class*="dark:text-white"] {
+html.joelos [class*='dark:text-white'] {
 	color: #d4ffd4 !important;
 }
 
 html.joelos .dark\:text-gray-100,
-html.joelos [class*="dark:text-gray-100"] {
+html.joelos [class*='dark:text-gray-100'] {
 	color: #d4ffd4 !important;
 }
 
 html.joelos .dark\:text-gray-200,
-html.joelos [class*="dark:text-gray-200"] {
+html.joelos [class*='dark:text-gray-200'] {
 	color: #b8f0b8 !important;
 }
 
 html.joelos .dark\:text-gray-300,
-html.joelos [class*="dark:text-gray-300"] {
+html.joelos [class*='dark:text-gray-300'] {
 	color: #90d890 !important;
 }
 
 html.joelos .dark\:text-gray-400,
-html.joelos [class*="dark:text-gray-400"] {
+html.joelos [class*='dark:text-gray-400'] {
 	color: #68b868 !important;
 }
 
 html.joelos .dark\:text-gray-500,
-html.joelos [class*="dark:text-gray-500"] {
+html.joelos [class*='dark:text-gray-500'] {
 	color: #4a9a4a !important;
 }
 
 html.joelos .dark\:text-gray-600,
-html.joelos [class*="dark:text-gray-600"] {
+html.joelos [class*='dark:text-gray-600'] {
 	color: #3a7a3a !important;
 }
 
 html.joelos .text-gray-400,
-html.joelos [class*="text-gray-400"] {
+html.joelos [class*='text-gray-400'] {
 	color: #68b868 !important;
 }
 
 html.joelos .text-gray-500,
-html.joelos [class*="text-gray-500"] {
+html.joelos [class*='text-gray-500'] {
 	color: #4a9a4a !important;
 }
 
 html.joelos .text-gray-600,
-html.joelos [class*="text-gray-600"] {
+html.joelos [class*='text-gray-600'] {
 	color: #3a7a3a !important;
 }
 
 html.joelos .text-gray-700,
-html.joelos [class*="text-gray-700"] {
+html.joelos [class*='text-gray-700'] {
 	color: #d4ffd4 !important;
 }
 
 html.joelos .text-gray-800,
-html.joelos [class*="text-gray-800"] {
+html.joelos [class*='text-gray-800'] {
 	color: #d4ffd4 !important;
 }
 
 html.joelos .text-gray-900,
-html.joelos [class*="text-gray-900"] {
+html.joelos [class*='text-gray-900'] {
 	color: #e8ffe8 !important;
 }
 
 html.joelos .text-black,
-html.joelos [class*="text-black"] {
+html.joelos [class*='text-black'] {
 	color: #d4ffd4 !important;
 }
 
 /* ── Fix borders ── */
 html.joelos .border-gray-100\/30,
-html.joelos [class*="border-gray-100/30"] {
+html.joelos [class*='border-gray-100/30'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .dark\:border-gray-850\/30,
-html.joelos [class*="dark:border-gray-850/30"] {
+html.joelos [class*='dark:border-gray-850/30'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .dark\:border-gray-800,
-html.joelos [class*="dark:border-gray-800"] {
+html.joelos [class*='dark:border-gray-800'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .dark\:border-gray-700,
-html.joelos [class*="dark:border-gray-700"] {
+html.joelos [class*='dark:border-gray-700'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .dark\:border-gray-850,
-html.joelos [class*="dark:border-gray-850"] {
+html.joelos [class*='dark:border-gray-850'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .border-gray-200,
-html.joelos [class*="border-gray-200"] {
+html.joelos [class*='border-gray-200'] {
 	border-color: #1a3a1a !important;
 }
 
 html.joelos .border-gray-100,
-html.joelos [class*="border-gray-100"] {
+html.joelos [class*='border-gray-100'] {
 	border-color: #1a3a1a !important;
 }
 
-/* ── Fix hover states ── */
-html.joelos [class*="hover:bg"]:hover {
-	background-color: #111a11 !important;
+/* ── Fix hover states — targeted, not global ── */
+html.joelos .sidebar .hover\:bg-gray-100:hover,
+html.joelos .sidebar [class*='hover:bg-gray-100']:hover,
+html.joelos nav .hover\:bg-gray-100:hover,
+html.joelos nav [class*='hover:bg-gray-100']:hover {
+	background-color: rgba(0, 255, 65, 0.06) !important;
 }
 
-html.joelos .hover\:bg-gray-100:hover,
-html.joelos [class*="hover:bg-gray-100"]:hover {
-	background-color: #111a11 !important;
+html.joelos .sidebar .dark\:hover\:bg-gray-800:hover,
+html.joelos .sidebar .dark\:hover\:bg-gray-900:hover,
+html.joelos nav .dark\:hover\:bg-gray-800:hover {
+	background-color: rgba(0, 255, 65, 0.06) !important;
 }
 
-html.joelos .dark\:hover\:bg-gray-800:hover,
-html.joelos [class*="dark:hover:bg-gray-800"]:hover {
-	background-color: #111a11 !important;
-}
-
-html.joelos .dark\:hover\:bg-gray-850:hover,
-html.joelos [class*="dark:hover:bg-gray-850"]:hover {
-	background-color: #0d140d !important;
-}
-
-html.joelos .dark\:hover\:bg-gray-900:hover,
-html.joelos [class*="dark:hover:bg-gray-900"]:hover {
-	background-color: #111a11 !important;
-}
-
-html.joelos .hover\:text-white:hover,
-html.joelos [class*="hover:text-white"]:hover {
+html.joelos .hover\:text-white:hover {
 	color: #00ff41 !important;
 }
 
@@ -1120,13 +1108,13 @@ html.joelos .shadow-xl {
 
 /* ── Fix ring / focus rings ── */
 html.joelos .ring-1,
-html.joelos [class*="ring-"] {
+html.joelos [class*='ring-'] {
 	--tw-ring-color: rgba(0, 255, 65, 0.2) !important;
 }
 
 /* ── Fix dividers ── */
 html.joelos .divide-y > *,
-html.joelos [class*="divide-"] > * {
+html.joelos [class*='divide-'] > * {
 	border-color: #1a3a1a !important;
 }
 
@@ -1143,8 +1131,8 @@ html.joelos label {
 }
 
 /* ── Fix settings panels ── */
-html.joelos [class*="settings"] [class*="card"],
-html.joelos [class*="settings"] [class*="panel"],
+html.joelos [class*='settings'] [class*='card'],
+html.joelos [class*='settings'] [class*='panel'],
 html.joelos #tab-general,
 html.joelos #tab-general * {
 	color: #d4ffd4;
@@ -1152,15 +1140,15 @@ html.joelos #tab-general * {
 
 /* ── FIX: Save button — green bg, black text, NOT lime everywhere ── */
 html.joelos button.bg-black,
-html.joelos button[class*="bg-black"],
+html.joelos button[class*='bg-black'],
 html.joelos .dark button.bg-white,
-html.joelos .dark button[class*="bg-white"] {
+html.joelos .dark button[class*='bg-white'] {
 	background-color: #299b46 !important;
 	color: #0a0f0a !important;
 }
 
 html.joelos .dark\:text-black,
-html.joelos [class*="dark:text-black"] {
+html.joelos [class*='dark:text-black'] {
 	color: #0a0f0a !important;
 }
 
@@ -1199,14 +1187,13 @@ html.joelos .hljs-section {
 	color: #bb55ff !important;
 }
 
-
 /* ── FIX: Message input text — make it bright and visible ── */
 html.joelos #chat-input,
 html.joelos #chat-input-container,
-html.joelos [id*="chat-input"],
+html.joelos [id*='chat-input'],
 html.joelos .ProseMirror,
 html.joelos .tiptap,
-html.joelos [contenteditable="true"] {
+html.joelos [contenteditable='true'] {
 	color: #d4ffd4 !important;
 	caret-color: #00ff41 !important;
 }
@@ -1218,20 +1205,19 @@ html.joelos .ProseMirror p.is-editor-empty:first-child::before {
 
 /* ── FIX: Rich text input inside message composer ── */
 html.joelos .RichTextInput,
-html.joelos [class*="RichTextInput"] *,
+html.joelos [class*='RichTextInput'] *,
 html.joelos #message-input-container * {
 	color: #d4ffd4 !important;
 }
 
-
 html.joelos .dark .sticky,
-html.joelos .dark [class*="sticky"] {
+html.joelos .dark [class*='sticky'] {
 	background-color: #0a0f0a !important;
 }
 
 /* ── FIX: Input container background — ensure dark ── */
 html.joelos #message-input-container,
-html.joelos [id*="message-input"] {
+html.joelos [id*='message-input'] {
 	background: #0d140d !important;
 	border-color: #1a3a1a !important;
 }
@@ -1254,22 +1240,22 @@ html.joelos .disabled,
 html.joelos button:disabled {
 	opacity: 0.4;
 	background-color: #1a3a1a !important;
-	color: #4a7a4a !important;
+	color: #00ff41 !important;
 }
 
 /* ── FIX: Sidebar bottom gradient shadow — remove white glow ── */
 html.joelos .sidebar-bg-gradient-to-t,
-html.joelos [class*="sidebar-bg-gradient"],
+html.joelos [class*='sidebar-bg-gradient'],
 html.joelos .bg-linear-to-t.from-gray-50,
 html.joelos .bg-linear-to-t.from-gray-950,
-html.joelos [class*="bg-linear-to-t"][class*="from-gray"] {
+html.joelos [class*='bg-linear-to-t'][class*='from-gray'] {
 	background-image: linear-gradient(to top, #0a0f0a 0%, transparent 100%) !important;
 	--tw-gradient-from: #0a0f0a !important;
 	--tw-gradient-to: transparent !important;
 }
 
 html.joelos .dark\:from-gray-950,
-html.joelos [class*="dark:from-gray-950"] {
+html.joelos [class*='dark:from-gray-950'] {
 	--tw-gradient-from: #0a0f0a !important;
 }
 
@@ -1278,8 +1264,8 @@ html.joelos .from-gray-50 {
 }
 
 /* Kill any gradient that might produce white edges */
-html.joelos [class*="bg-linear-to-t"],
-html.joelos [class*="bg-gradient-to-t"] {
+html.joelos [class*='bg-linear-to-t'],
+html.joelos [class*='bg-gradient-to-t'] {
 	--tw-gradient-from: #0a0f0a !important;
 	--tw-gradient-to: transparent !important;
 }
@@ -1287,40 +1273,321 @@ html.joelos [class*="bg-gradient-to-t"] {
 /* Specifically target the sidebar gradient overlay */
 html.joelos .sticky .bg-linear-to-t,
 html.joelos .sidebar .bg-linear-to-t,
-html.joelos [class*="sticky"] [class*="bg-linear-to-t"] {
+html.joelos [class*='sticky'] [class*='bg-linear-to-t'] {
 	background-image: linear-gradient(to top, #0a0f0a 0%, rgba(10, 15, 10, 0) 100%) !important;
 }
 
 /* Remove any remaining white/light shadows in sidebar */
-html.joelos .sidebar [class*="shadow"],
-html.joelos [class*="sidebar"] [class*="shadow"] {
+html.joelos .sidebar [class*='shadow'],
+html.joelos [class*='sidebar'] [class*='shadow'] {
 	box-shadow: none !important;
 }
 
 /* ── FIX: Sidebar chat item 3-dot menu — remove white gradient glow ── */
 html.joelos #sidebar-chat-item-menu,
-html.joelos [id*="sidebar-chat-item-menu"] {
+html.joelos [id*='sidebar-chat-item-menu'] {
 	--tw-gradient-from: #0d140d !important;
 	--tw-gradient-to: transparent !important;
 }
 
+/* ── FIX: Sidebar folder buttons (Chats, Folders, etc.) — visible text, green hover ── */
+html.joelos #sidebar-folder-button,
+html.joelos [id*='sidebar-folder-button'] {
+	color: #90d890 !important;
+	background-color: transparent !important;
+}
+
+html.joelos #sidebar-folder-button button,
+html.joelos [id*='sidebar-folder-button'] button {
+	color: #90d890 !important;
+}
+
+html.joelos #sidebar-folder-button:hover,
+html.joelos [id*='sidebar-folder-button']:hover {
+	background-color: rgba(0, 255, 65, 0.06) !important;
+}
+
+html.joelos #sidebar-folder-button:hover button,
+html.joelos [id*='sidebar-folder-button']:hover button {
+	color: #00ff41 !important;
+}
+
+/* The chevron icon */
+html.joelos #sidebar-folder-button svg {
+	stroke: #90d890 !important;
+}
+
+html.joelos #sidebar-folder-button:hover svg {
+	stroke: #00ff41 !important;
+}
+
+/* The plus button inside folder */
+html.joelos #sidebar-folder-button [class*='dark:hover:bg-gray-850'] {
+	background-color: rgba(0, 255, 65, 0.08) !important;
+	color: #00ff41 !important;
+}
+
+/* Override the gray text classes on folder buttons */
+html.joelos #sidebar-folder-button.text-gray-600,
+html.joelos #sidebar-folder-button.dark\:text-gray-400,
+html.joelos [id*='sidebar-folder-button'].text-gray-600 {
+	color: #90d890 !important;
+}
+
+html.joelos #sidebar-folder-button:hover.text-gray-600,
+html.joelos #sidebar-folder-button:hover.dark\:text-gray-400 {
+	color: #00ff41 !important;
+}
+
 html.joelos #sidebar-chat-item-menu .from-gray-100,
-html.joelos [id*="sidebar-chat-item-menu"].from-gray-100,
+html.joelos [id*='sidebar-chat-item-menu'].from-gray-100,
 html.joelos .from-gray-100 {
 	--tw-gradient-from: #0d140d !important;
 }
 
 html.joelos #sidebar-chat-item-menu .dark\:from-gray-900,
 html.joelos #sidebar-chat-item-menu .dark\:from-gray-950,
-html.joelos [id*="sidebar-chat-item-menu"].dark\:from-gray-950 {
+html.joelos [id*='sidebar-chat-item-menu'].dark\:from-gray-950 {
 	--tw-gradient-from: #0d140d !important;
 }
 
 /* Kill any bg-linear-to-l gradient producing white edges */
 html.joelos .bg-linear-to-l.from-gray-100,
 html.joelos .bg-linear-to-l.dark\:from-gray-950,
-html.joelos [class*="bg-linear-to-l"][class*="from-gray"] {
+html.joelos [class*='bg-linear-to-l'][class*='from-gray'] {
 	--tw-gradient-from: #0d140d !important;
 	--tw-gradient-to: transparent !important;
 	background-image: linear-gradient(to left, #0d140d 80%, transparent 100%) !important;
+}
+/* ── FIX: Navbar buttons — visible hover with green glow ── */
+html.joelos nav button,
+html.joelos [class*='navbar'] button,
+html.joelos #temporary-chat-button,
+html.joelos #chat-context-menu-button {
+	color: #90d890 !important;
+	transition: all 0.15s ease !important;
+}
+
+html.joelos nav button:hover,
+html.joelos [class*='navbar'] button:hover {
+	background-color: rgba(0, 255, 65, 0.08) !important;
+	color: #00ff41 !important;
+}
+
+/* Navbar icons — ensure they're visible */
+html.joelos nav button svg,
+html.joelos [class*='navbar'] button svg {
+	stroke: #90d890 !important;
+}
+
+html.joelos nav button:hover svg,
+html.joelos [class*='navbar'] button:hover svg {
+	stroke: #00ff41 !important;
+}
+
+/* Navbar background gradient fix */
+html.joelos #navbar-bg-gradient-to-b,
+html.joelos [id*='navbar-bg-gradient'] {
+	--tw-gradient-from: #0a0f0a !important;
+	--tw-gradient-via: rgba(10, 15, 10, 0.5) !important;
+	--tw-gradient-to: transparent !important;
+}
+
+/* Kill the white/gray navbar gradient */
+html.joelos .bg-linear-to-b.from-white\/90,
+html.joelos .bg-linear-to-b.dark\:from-gray-900\/90,
+html.joelos [class*='bg-linear-to-b'][class*='from-white'],
+html.joelos [class*='bg-linear-to-b'][class*='from-gray-900'] {
+	background-image: linear-gradient(
+		to bottom,
+		#0a0f0a 40%,
+		rgba(10, 15, 10, 0.5) 80%,
+		transparent 100%
+	) !important;
+}
+
+/* ── FIX: Switch OFF state — make knob visible against green bg ── */
+html.joelos [class*='switch'] [class*='knob'],
+html.joelos [class*='Switch'] [class*='knob'],
+html.joelos [class*='switch'] [class*='dot'],
+html.joelos [class*='toggle'] [class*='knob'],
+html.joelos [class*='switch'] > span:last-child,
+html.joelos [role='switch'] > span:last-child {
+	background-color: #0d140d !important;
+	border: 1px solid #00ff41 !important;
+	box-shadow: 0 0 4px rgba(0, 255, 65, 0.3) !important;
+}
+
+/* Switch ON — keep green bg, darker knob */
+html.joelos [class*='switch'][class*='active'] [class*='knob'],
+html.joelos [class*='Switch'][class*='active'] [class*='knob'],
+html.joelos [class*='switch'][class*='on'] [class*='dot'],
+html.joelos [role='switch'][aria-checked='true'] > span:last-child {
+	background-color: #050805 !important;
+	border-color: #00ff41 !important;
+	box-shadow: 0 0 6px rgba(0, 255, 65, 0.5) !important;
+}
+
+/* ── FIX: Integration menu — "Code Interpreter" etc always visible ── */
+html.joelos [class*='min-w-70'] button .truncate,
+html.joelos [class*='min-w-70'] button [class*='truncate'],
+html.joelos [class*='min-w-70'] .text-sm {
+	color: #90d890 !important;
+}
+
+/* On hover — brighter */
+html.joelos [class*='min-w-70'] button:hover .truncate,
+html.joelos [class*='min-w-70'] button:hover [class*='text-sm'] {
+	color: #00ff41 !important;
+}
+
+/* The span count badges (e.g., "3") */
+html.joelos [class*='min-w-70'] .text-gray-500 {
+	color: #68b868 !important;
+}
+
+/* Menu item hover bg */
+html.joelos [class*='min-w-70'] button:hover {
+	background-color: rgba(0, 255, 65, 0.06) !important;
+}
+
+/* Menu icons */
+html.joelos [class*='min-w-70'] button svg:not([class*='switch'] svg):not([class*='Switch'] svg) {
+	stroke: #90d890 !important;
+}
+html.joelos [class*='min-w-70'] button:hover svg {
+	stroke: #00ff41 !important;
+}
+
+/* ── FIX: Terminal icon in Code Interpreter menu — always visible ── */
+html.joelos [class*='min-w-70'] .shrink-0 svg,
+html.joelos [class*='min-w-70'] button svg {
+	stroke: #90d890 !important;
+	color: #90d890 !important;
+}
+
+html.joelos [class*='min-w-70'] button:hover svg {
+	stroke: #00ff41 !important;
+	color: #00ff41 !important;
+}
+
+/* Specifically target the Terminal component's SVG */
+html.joelos [class*='min-w-70'] svg[class*='size-3.5'],
+html.joelos [class*='min-w-70'] [class*='shrink-0'] svg {
+	stroke: #90d890 !important;
+}
+
+html.joelos [class*='min-w-70'] button:hover svg[class*='size-3.5'] {
+	stroke: #00ff41 !important;
+}
+
+/* ── FIX: Calendar modal — visible text in selects and inputs ── */
+html.joelos select option,
+html.joelos [class*='modal'] select option {
+	background-color: #0d140d !important;
+	color: #d4ffd4 !important;
+}
+
+/* Selected option in dropdown */
+html.joelos select,
+html.joelos [class*='modal'] select {
+	color: #d4ffd4 !important;
+}
+
+/* Date and time inputs */
+html.joelos input[type='date'],
+html.joelos input[type='time'],
+html.joelos [class*='modal'] input[type='date'],
+html.joelos [class*='modal'] input[type='time'] {
+	color: #d4ffd4 !important;
+	color-scheme: dark;
+}
+
+/* Date/time input calendar/clock picker icon */
+html.joelos input[type='date']::-webkit-calendar-picker-indicator,
+html.joelos input[type='time']::-webkit-calendar-picker-indicator {
+	filter: invert(0.7) sepia(1) saturate(5) hue-rotate(70deg);
+}
+
+/* Text inputs in modal */
+html.joelos [class*='modal'] input[type='text'],
+html.joelos [class*='modal'] textarea {
+	color: #d4ffd4 !important;
+}
+
+/* Placeholders in modal */
+html.joelos [class*='modal'] input::placeholder,
+html.joelos [class*='modal'] textarea::placeholder {
+	color: #4a7a4a !important;
+}
+
+/* Modal labels (Calendar, When, Location, etc.) */
+html.joelos [class*='modal'] .text-xs.text-gray-500 {
+	color: #68b868 !important;
+}
+
+/* The "–" separator between time inputs */
+html.joelos [class*='modal'] .text-gray-300,
+html.joelos [class*='modal'] .dark\:text-gray-600 {
+	color: #68b868 !important;
+}
+
+/* "All day" label */
+html.joelos [class*='modal'] .text-gray-400 {
+	color: #68b868 !important;
+}
+
+/* Cancel/Delete buttons */
+html.joelos [class*='modal'] .text-gray-500,
+html.joelos [class*='modal'] .text-gray-400 {
+	color: #68b868 !important;
+}
+
+html.joelos [class*='modal'] .text-gray-500:hover,
+html.joelos [class*='modal'] .text-gray-400:hover {
+	color: #00ff41 !important;
+}
+
+/* The Create/Save button */
+html.joelos [class*='modal'] button.bg-black,
+html.joelos [class*='modal'] .dark\:bg-white {
+	background-color: #00ff41 !important;
+	color: #0a0f0a !important;
+}
+
+/* ── FIX: Models page — Import/Export buttons visible ── */
+html.joelos button.bg-gray-50,
+html.joelos button[class*='bg-gray-50'],
+html.joelos .dark\:bg-gray-850,
+html.joelos button[class*='dark:bg-gray-850'] {
+	background-color: #111a11 !important;
+	color: #90d890 !important;
+	border: 1px solid #1a3a1a !important;
+}
+
+html.joelos button.bg-gray-50:hover,
+html.joelos button[class*='bg-gray-50']:hover,
+html.joelos .dark\:bg-gray-850:hover {
+	background-color: #1a3a1a !important;
+	color: #00ff41 !important;
+}
+
+/* "New Model" button — green with dark text */
+html.joelos a.bg-black,
+html.joelos a[class*='bg-black'],
+html.joelos .dark\:bg-white.dark\:text-black {
+	background-color: #00ff41 !important;
+	color: #0a0f0a !important;
+}
+
+html.joelos a.bg-black:hover,
+html.joelos .dark\:bg-white:hover {
+	background-color: #00cc34 !important;
+	box-shadow: 0 0 12px rgba(0, 255, 65, 0.3) !important;
+}
+
+/* "New Model" plus icon */
+html.joelos a.bg-black svg,
+html.joelos .dark\:bg-white svg {
+	stroke: #0a0f0a !important;
 }

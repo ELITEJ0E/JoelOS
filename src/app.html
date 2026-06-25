@@ -77,7 +77,7 @@
 				const isJoelos = document.documentElement.classList.contains('joelos');
 				const isDarkMode = document.documentElement.classList.contains('dark') || isJoelos;
 
-				const preloadHref = isDarkMode ? '/static/splash-dark.png' : '/static/splash.png';
+				const preloadHref = isDarkMode ? '/static/favicon.png' : '/static/splash.png';
 				const preload = document.createElement('link');
 				preload.rel = 'preload';
 				preload.as = 'image';
@@ -106,10 +106,10 @@
 				logo.loading = 'eager';
 				logo.fetchPriority = 'high';
 				logo.src = isJoelos
-					? '/static/splash-dark.png'
+					? '/static/favicon.png'
 					: isDarkMode
-						? '/static/splash-dark.png'
-						: '/static/splash.png';
+						? '/static/favicon.png'
+						: '/static/favicon.png';
 
 				document.addEventListener('DOMContentLoaded', function () {
 					const splash = document.getElementById('splash-screen');
